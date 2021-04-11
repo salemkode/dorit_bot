@@ -36,7 +36,11 @@ bot.command("update", (ctx) => {
           });
         });
       });
-      ctx.reply("اختر ماتريد تحديثة", Keyboard.make(array).inline());
+      ctx.reply("اختر ماتريد تحديثة", Keyboard.make(array , {
+        columns: 2,
+        filter: btn => btn % 2
+         }).inline());
+
     });
   }
 });
