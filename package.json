@@ -1,0 +1,21 @@
+{
+  "name": "dorit_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "git-pull-or-clone": "^2.0.1",
+    "pm2": "^4.5.6",
+    "prompt-sync": "^4.2.0",
+    "simple-git": "^2.37.0",
+    "telegraf": "^4.3.0",
+    "telegram-keyboard": "^2.2.6"
+  }
+}
