@@ -18,7 +18,7 @@ bot.command("update", (ctx) => {
       let array = [];
       list.forEach((e) => {
         let path = e.pm2_env.pm_cwd;
-        let name = path.split("\\").last();
+        let name = path.split("/").last();
         array.push(name);
         bot.action(name, (ctx) => {
           clone(e.pm2_env.versioning.url, path, (err) => {
