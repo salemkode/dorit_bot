@@ -26,7 +26,12 @@ bot.command("update", (ctx) => {
               ctx.reply(err);
               return;
             }
-            pm2.restart(e.pm_id);
+            pm2.restart(e.pm_id , (err) => {
+                if (err) {
+                  ctx.reply(err);
+                  return;
+                }
+            });
             ctx.reply("SUCCESS!");
           });
         });
